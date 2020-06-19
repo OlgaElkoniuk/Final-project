@@ -1,0 +1,17 @@
+
+<br><br/>
+<table border="1">
+    <tr>
+        <td>Company name:</td>
+        <td>Company adress:</td>
+        <td>Contact email:</td>
+    </tr>
+
+    <tr>
+        <td>{{company.name}}</td>
+        <td>{{company.adress}}</td>
+        <td>{{company.contactEmail}}</td>
+    </tr>
+</table>
+<input type="number" placeholder = "ID..." [(ngModel)]="companyId"/>
+<button (click)="getCompanyById()">Get company</button>

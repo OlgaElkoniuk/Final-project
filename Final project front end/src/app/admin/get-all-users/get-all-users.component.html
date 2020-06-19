@@ -1,0 +1,17 @@
+
+<br><br/>
+<table border="1">
+    <tr>
+        <td>ID:</td>
+        <td>Email:</td>
+        <td>Client type:</td>
+        <td>Company ID:</td>
+    </tr>
+
+    <tr *ngFor="let user of users">
+        <td>{{user.ID}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.clientType}}</td>
+        <td>{{user.companyId}}</td>
+    </tr>
+</table>

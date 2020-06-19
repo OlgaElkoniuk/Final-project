@@ -1,0 +1,9 @@
+<form>
+  <p>user name:</p>
+  <input type="text" placeholder="Username..." name="userName" [(ngModel)]="user.email" />
+  <p>password:</p>
+  <input type="password" placeholder="Password..." name="password" [(ngModel)]="user.password" />
+  <br><br />
+  <button (click)="updateUser()">update profile</button>
+
+</form>

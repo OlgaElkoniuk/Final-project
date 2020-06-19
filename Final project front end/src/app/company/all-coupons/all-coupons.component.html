@@ -1,0 +1,30 @@
+<h1>Coupons:</h1>
+
+
+<br><br/>
+  <table border="1">
+      <tr>
+          <td>ID:</td>
+          <td>Title:</td>
+          <td>Description:</td>
+          <td>Start date:</td>
+          <td>End date:</td>
+          <td>Amount:</td>
+          <td>Price:</td>
+          <td>Category:</td>
+          <td>Image:</td>
+      </tr>
+
+      <tr *ngFor="let coupon of coupons">
+          <td>{{coupon.id}}</td>
+          <td>{{coupon.title}}</td>
+          <td>{{coupon.description}}</td>
+          <td>{{coupon.startDate}}</td>
+          <td>{{coupon.endDate}}</td>
+          <td>{{coupon.amount}}</td>
+          <td>{{coupon.price}}</td>
+          <td>{{coupon.category}}</td>
+          <td>{{coupon.Image}}</td>
+          <td><button (click)="deleteCoupon(coupon)">Delete coupon</button></td>
+      </tr>
+  </table>

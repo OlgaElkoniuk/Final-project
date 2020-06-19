@@ -1,0 +1,18 @@
+<h3>
+  Add company
+</h3>
+
+
+
+<p>company name:</p>
+<input type="text" placeholder="Company name..." 
+name="name" [(ngModel)]="company.name"/>
+<br><br/>
+<input type="text" placeholder="Contact email..." 
+name="contactEmail" [(ngModel)]="company.contactEmail"/>
+<br><br/>
+<input type="text" placeholder="Adress..." 
+name="adress" [(ngModel)]="company.adress"/>
+<br><br/>
+
+<button (click)="addCompany()">Add company</button>

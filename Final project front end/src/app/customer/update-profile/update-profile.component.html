@@ -1,0 +1,13 @@
+<form>
+  <p>user name:</p>
+  <input type="text" placeholder="Username..." name="userName" [(ngModel)]="user.email" />
+  <p>password:</p>
+  <input type="password" placeholder="Password..." name="password" [(ngModel)]="user.password" />
+  <p>first name:</p>
+  <input type="text" placeholder="first name..." name="first name" [(ngModel)]="customer.firstName" />
+  <p>second name:</p>
+  <input type="text" placeholder="second name..." name="second name" [(ngModel)]="customer.secondName" />
+  <br><br />
+  <button (click)="updateUser()">update profile</button>
+
+</form>

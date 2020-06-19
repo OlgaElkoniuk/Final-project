@@ -1,0 +1,17 @@
+
+<form>
+    <div class="container">
+
+      
+  <p>user name:</p>
+  <input type="text" placeholder="Username..." name="userName" [(ngModel)]="credentials.userName" />
+
+
+  <p>password:</p>
+  <input type="password" placeholder="Password..." name="password" [(ngModel)]="credentials.password" />
+  <br><br />
+  <button (click)="login()">Login</button>
+  <br><br />
+  <a routerLink="/register">REGISTER</a>
+  </div>
+</form>

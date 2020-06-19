@@ -1,0 +1,33 @@
+<h3>
+  Add coupon
+</h3>
+
+
+
+
+<input type="text" placeholder="Title..." 
+name="title" [(ngModel)]="coupon.title"/>
+<br><br/>
+<input type="text" placeholder="Description..." 
+name="description" [(ngModel)]="coupon.description"/>
+<br><br/>
+<input type="date" placeholder="Start Date..." 
+name="startDate" [(ngModel)]="coupon.startDate"/>
+<br><br/>
+<input type="date" placeholder="End Date..." 
+name="endDate" [(ngModel)]="coupon.endDate"/>
+<br><br/>
+<input type="number" placeholder="Amount..." 
+name="amount" [(ngModel)]="coupon.amount"/>
+<br><br/>
+<input type="number" placeholder="Price..." 
+name="price" [(ngModel)]="coupon.price"/>
+<br><br/>
+<input type="text" placeholder="Image..." 
+name="image" [(ngModel)]="coupon.image"/>
+<br><br/>
+<input type="text" placeholder="Category..." 
+name="category" [(ngModel)]="coupon.category"/>
+<br><br/>
+
+<button (click)="addCoupon()">Add coupon</button>

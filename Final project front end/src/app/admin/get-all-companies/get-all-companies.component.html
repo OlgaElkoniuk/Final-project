@@ -1,0 +1,23 @@
+
+  <h1>Companies:</h1>
+
+<app-get-company-by-id></app-get-company-by-id>
+<br><br/>
+  <table border="1">
+      <tr>
+          <td>Company name:</td>
+          <td>Company adress:</td>
+          <td>Contact email:</td>
+          <td>ID:</td>
+      </tr>
+
+      <tr *ngFor="let company of companies">
+          <td>{{company.name}}</td>
+          <td>{{company.adress}}</td>
+          <td>{{company.contactEmail}}</td>
+          <td>{{company.id}}</td>
+          <td><button (click)="deleteCompany(company)">Delete companies</button></td>
+      </tr>
+  </table>
+
+  
